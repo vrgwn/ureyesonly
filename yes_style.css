@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #FAE7F3; 
+    font-family: 'Indie Flower', cursive;
+    overflow: hidden; 
+}
+
+.container {
+    text-align: center;
+    background-color: #FBE8F3; 
+    padding: 40px;
+    border-radius: 20px;
+    border: 3px solid #ff6b81; 
+    box-shadow: 0 8px 20px rgba(255, 107, 129, 0.3); 
+    max-width: 600px; 
+    width: 90%; 
+}
+
+.header_text {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ff6b81; 
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(255, 107, 129, 0.2); 
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.gif_container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; 
+}
+
+@keyframes neonGlow {
+    0% {
+        box-shadow: 0 0 5px rgba(251, 158, 198, 1), 0 0 10px rgba(251, 158, 198, 1), 0 0 15px rgba(251, 158, 198, 1);
+    }
+    50% {
+        box-shadow: 0 0 10px rgba(251, 158, 198, 1.5), 0 0 20px rgba(251, 158, 198, 1.5), 0 0 30px rgba(251, 158, 198, 1.5);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(251, 158, 198, 1), 0 0 10px rgba(251, 158, 198, 1), 0 0 15px rgba(251, 158, 198, 1);
+    }
+}
+
+.container {
+    border: 5px solid rgba(251, 158, 198, 1); /* Solid border color */
+    border-radius: 10px; /* Optional: rounded corners */
+    animation: neonGlow 1.5s infinite alternate; /* Apply the neon glow animation */
+}
+
